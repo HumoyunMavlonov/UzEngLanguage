@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.favourite.FavouriteActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#E7505B">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Favourites"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/noFav"
+        android:layout_width="match_parent"
+        app:lottie_rawRes="@raw/animation_lmqqwdab"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+</LinearLayout>
